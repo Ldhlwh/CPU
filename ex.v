@@ -55,6 +55,8 @@ module ex(
     	stallreq = 1'b0;
     	wd_o = wd_i;
     	wreg_o = wreg_i;
+    	opcode_o = 7'b0000000;
+    	funct3_o = 3'b000;
     	if (rst == 1'b1)
     		wdata_o = 32'h00000000;
     	else
